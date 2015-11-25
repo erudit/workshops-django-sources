@@ -21,6 +21,7 @@ class Numero(models.Model):
 
 class Article(models.Model):
     nom = models.CharField(max_length=255)
+    auteurs = models.ManyToManyField('Auteur')
 
     def __str__(self):
         return self.nom
