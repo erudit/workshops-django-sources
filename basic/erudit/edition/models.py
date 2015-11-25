@@ -9,7 +9,10 @@ class Editeur(models.Model):
 
 class Revue(models.Model):
     nom = models.CharField(max_length=255)
-    editeur = models.ForeignKey('Editeur', null=True, blank=True)
+    editeur = models.ForeignKey('Editeur', 
+        null=True, blank=True,
+        related_name='revues',
+    )
 
     def __str__(self):
         return self.nom

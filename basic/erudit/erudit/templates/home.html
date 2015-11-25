@@ -8,8 +8,12 @@
     </p>
 
     <p>
-    Voici une de nos revues :<br />
-    {{ revue }}
+    Voici nos revues :
     </p>
+    {% for r in revues %}
+    <ul>
+        <li>{{ r }}</li>
+    </ul>
+    {% endfor %}
   </body>
 </html>
