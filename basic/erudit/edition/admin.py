@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from edition.models import Revue, Auteur
+
+
+admin.site.register(Revue)
+admin.site.register(Auteur)
