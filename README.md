@@ -12,4 +12,4 @@
 
 ---
 
-[workshops-django]: https://github.com/erudit/workshops-django-sources
+[workshops-django]: https://github.com/erudit/workshops-django
